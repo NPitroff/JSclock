@@ -4,3 +4,5 @@ function currentTime() {
   var min = date.getMinutes();
   var sec = date.getSecond();
 }
+
+console.log(currentTime());
