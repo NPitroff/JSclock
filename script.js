@@ -9,6 +9,8 @@ function currentTime() {
   hour = updateTime(hour);
   min = updateTime(min);
   sec = updateTime(sec);
+  // display the time in the html
+  document.getElementById("clock").innerHTML = hour + " : " + min + " : " + sec;
 
   console.log(currentTime());
 }
@@ -22,5 +24,4 @@ function updateTime(k){
   }
 }
 
-// display the time in the html
-document.getElementById(clock).innerHTML = hour + " : " + min + " : " + sec;
+currentTime();
