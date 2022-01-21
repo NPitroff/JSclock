@@ -21,3 +21,6 @@ function updateTime(k){
     return k;
   }
 }
+
+// display the time in the html
+document.getElementById(clock).innerHTML = hour + " : " + min + " : " + sec;
