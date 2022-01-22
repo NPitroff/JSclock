@@ -12,7 +12,7 @@ function currentTime() {
   // display the time in the html
   document.getElementById("clock").innerHTML = hour + " : " + min + " : " + sec;
 
-  console.log(currentTime());
+  
 }
 // append the time returned with a "0"
 function updateTime(k){
