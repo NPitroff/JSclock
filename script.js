@@ -40,7 +40,7 @@ function current12Time() {
   min = updateTime(min);
   sec = updateTime(sec);
   // display the time in the html
-  document.getElementById("12-clock").innerHTML = hour + " : " + min + " : " + sec;
+  document.getElementById("secondClock").innerHTML = hour + " : " + min + " : " + sec;
 setTimeout(current12Time, 1000);
 
 }
