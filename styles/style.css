@@ -1,8 +1,12 @@
 /* Google font */
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
 
-body {
+.card-body {
   background-color: #121212;
+}
+
+.card-title{
+  color:green;
 }
 
 #clock {
