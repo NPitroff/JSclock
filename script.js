@@ -43,6 +43,9 @@ function current12Time() {
   document.getElementById("secondClock").innerHTML = hour + " : " + min + " : " + sec;
 setTimeout(current12Time, 1000);
 
+//Varriable to describe am or pm
+var mornEve = "AM";
+mornEve = (hour >=12 ? "PM": "AM")
 }
 // append the time returned with a "0"
 function updateTime(k){
