@@ -33,6 +33,9 @@ function current12Time() {
   var hour = date.getHours();
   var min = date.getMinutes();
   var sec = date.getSeconds();
+  //Varriable to describe am or pm
+  var mornEve = "AM";
+  mornEve = (hour >=12 ? "PM": "AM")
 
   // nest the variables for updateTime in currentTime();
 
@@ -40,12 +43,10 @@ function current12Time() {
   min = updateTime(min);
   sec = updateTime(sec);
   // display the time in the html
-  document.getElementById("secondClock").innerHTML = hour + " : " + min + " : " + sec;
+  document.getElementById("secondClock").innerHTML = hour + " : " + min + " : " + sec + " " + mornEve;
 setTimeout(current12Time, 1000);
 
-//Varriable to describe am or pm
-var mornEve = "AM";
-mornEve = (hour >=12 ? "PM": "AM")
+
 }
 // append the time returned with a "0"
 function updateTime(k){
