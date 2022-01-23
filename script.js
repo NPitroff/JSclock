@@ -37,6 +37,9 @@ function current12Time() {
   var mornEve = "AM";
   mornEve = (hour >=12 ? "PM": "AM")
 
+  // change hour to dsiplay in 12 format
+  hour = (hour == 0) ? 12 : ((hour > 12) ? (hour - 12): hour);
+
   // nest the variables for updateTime in currentTime();
 
   hour = updateTime(hour);
